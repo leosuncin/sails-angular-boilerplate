@@ -2,8 +2,16 @@
   "name": "sails-angular-boilerplate",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
-  "keywords": [],
+  "description": "Sails.js + Angular.js boilerplate project",
+  "keywords": [
+    "Sails.js",
+    "Angular.js",
+    "boilerplate",
+    "bower",
+    "grunt",
+    "backend",
+    "frontend"
+  ],
   "dependencies": {
     "ejs": "~0.8.4",
     "grunt": "0.4.2",
@@ -32,6 +40,6 @@
     "type": "git",
     "url": "git://github.com/leosuncin/sails-angular-boilerplate.git"
   },
-  "author": "leosuncin",
-  "license": ""
+  "author": "Jaime Leonardo Suncin Cruz <leosuncin@gmail.com>",
+  "license": "GPLv3"
 }
