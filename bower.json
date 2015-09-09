@@ -1,0 +1,32 @@
+{
+  "name": "sails-angular-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Jaime Leonardo Suncin Cruz <leosuncin@gmail.com>"
+  ],
+  "description": "Sails.js + Angular.js boilerplate project",
+  "main": "app.js",
+  "moduleName": "sailsAngularBoilerplateApp",
+  "appPath": "assets",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "Sails.js",
+    "Angular.js",
+    "boilerplate",
+    "bower",
+    "grunt",
+    "backend",
+    "frontend"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
