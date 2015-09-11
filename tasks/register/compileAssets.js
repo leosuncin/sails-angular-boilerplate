@@ -4,6 +4,7 @@ module.exports = function (grunt) {
         'clean:dev',
         'jst:dev',
         'less:dev',
+        'compass:dev',
         'coffee:dev',
         'bower:dev',
         'copy'
