@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    var env = process.env.NODE_ENV || 'development';
 
     grunt.registerTask('compileAssets', [
         'clean:dev',
@@ -7,6 +8,7 @@ module.exports = function (grunt) {
         'compass:dev',
         'coffee:dev',
         'bower:dev',
+        'html2js:' + env,
         'copy'
     ]);
 
