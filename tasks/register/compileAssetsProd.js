@@ -4,7 +4,8 @@ module.exports = function(grunt) {
         'compileAssets',
         'concat',
         'uglify',
-        'cssmin'
+        'cssmin',
+        'imagemin'
     ]);
 
 };
