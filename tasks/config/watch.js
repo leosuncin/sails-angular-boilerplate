@@ -17,35 +17,35 @@ module.exports = function(grunt) {
     grunt.config.set('watch', {
         less: {
             files: ['assets/styles/{,**/}*.less'],
-            tasks: ['less:dev', 'sails-linker:devStyles'],
+            tasks: ['less:dev', 'sails-linker:devStyles', 'notify:less'],
             options: {
                 livereload: true
             }
         },
         css: {
             files: ['assets/styles/{,**/}*.css'],
-            tasks: ['copy:styles', 'sails-linker:devStyles'],
+            tasks: ['copy:styles', 'sails-linker:devStyles', 'notify:css'],
             options: {
                 livereload: true
             }
         },
         coffee: {
             files: ['assets/scripts/**/*.coffee'],
-            tasks: ['coffee:dev', 'sails-linker:devJs'],
+            tasks: ['coffee:dev', 'sails-linker:devJs', 'notify:coffee'],
             options: {
                 livereload: true
             }
         },
         scripts: {
             files: ['assets/scripts/**/*.js', 'assets/js/**/*.js'],
-            tasks: ['copy:scripts', 'sails-linker:devJs'],
+            tasks: ['copy:scripts', 'sails-linker:devJs', 'notify:scripts'],
             options: {
                 livereload: true
             }
         },
         images: {
             files: ['assets/{,images/**/}*.{jpg,jpeg,png,gif,ico,svg}'],
-            tasks: ['copy:images'],
+            tasks: ['copy:images', 'notify:images'],
             options: {
                 livereload: true
             }
@@ -55,7 +55,8 @@ module.exports = function(grunt) {
             tasks: [
               'copy:vendor',
               'sails-linker:devStyles',
-              'sails-linker:devJs'
+              'sails-linker:devJs',
+              'notify:bower'
             ],
             options: {
                 livereload: true

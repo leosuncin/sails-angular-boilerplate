@@ -6,6 +6,7 @@
  * For usage docs see:
  *    https://github.com/gunta/grunt-manifest
  */
+
 module.exports = function(grunt) {
     grunt.config.set('manifest', {
         generate: {
