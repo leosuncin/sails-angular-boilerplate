@@ -5,7 +5,8 @@ module.exports = function(grunt) {
         'concat',
         'uglify',
         'cssmin',
-        'imagemin'
+        'imagemin',
+        'svgmin'
     ]);
 
 };
