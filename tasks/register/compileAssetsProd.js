@@ -7,7 +7,8 @@ module.exports = function(grunt) {
         'uglify',
         'cssmin',
         'imagemin',
-        'svgmin'
+        'svgmin',
+        'manifest'
     ]);
 
 };
