@@ -15,6 +15,7 @@ angular
         'ngSanitize',
         'ngTouch',
         'ui.router',
+        'sailsAngularBoilerplateApp.config',
         'sailsAngularBoilerplateApp.templates'
     ])
     .config([

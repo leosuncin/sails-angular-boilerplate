@@ -9,6 +9,7 @@ module.exports = function (grunt) {
         'coffee:dev',
         'bower:dev',
         'html2js:' + env,
+        'ngconstant:' + env,
         'copy'
     ]);
 
