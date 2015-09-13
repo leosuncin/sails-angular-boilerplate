@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 
     grunt.config.set('plato', {
         options: {
-            jshint: jshintrc
+            jshint: jshintrc,
+            title: require('../../package.json').name + ' Source Analysis'
         },
         report: {
             files: {

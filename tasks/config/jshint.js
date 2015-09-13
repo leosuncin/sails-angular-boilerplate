@@ -12,7 +12,8 @@ module.exports = function(grunt) {
     grunt.config.set('jshint', {
         options: {
             jshintrc: '.jshintrc',
-            reporter: require('jshint-stylish')
+            reporter: require('jshint-stylish'),
+            force: true
         },
         frontend: {
             src: ['assets/scripts/**/*.js']

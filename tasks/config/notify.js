@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             enabled: true,
             'max_jshint_notifications': 5, // maximum number of notifications from jshint output
             success: false, // whether successful grunt executions should be notified automatically
-            duration: 3 // the duration of notification in seconds, for `notify-send only
+            duration: 5 // the duration of notification in seconds, for `notify-send only
         }
     });
 
@@ -67,7 +67,13 @@ module.exports = function(grunt) {
                 title: 'Bower dependencies installed',
                 message: 'Bower task finished running'
             }
-        }
+        },
+        report: {
+            options: {
+                title: 'Report created',
+                message: 'Open .tmp/reports/index.html to see it'
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-notify');

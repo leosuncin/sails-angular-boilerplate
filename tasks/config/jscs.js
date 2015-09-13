@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         options: {
             config: '.jscsrc',
             reporter: 'console',
-            verbose: true // If you need output with rule names http://jscs.info/overview.html#verbose
+            verbose: true, // If you need output with rule names http://jscs.info/overview.html#verbose
+            force: true
         },
         frontend: {
             src: ['assets/scripts/**/*.js']
