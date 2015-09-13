@@ -7,6 +7,7 @@ module.exports = function (grunt) {
         'jst:dev',
         'less:dev',
         'compass:dev',
+        'stylus:dev',
         'coffee:dev',
         'bower:dev',
         'html2js:' + env,
