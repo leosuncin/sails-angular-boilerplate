@@ -52,7 +52,10 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "bower install --allow-root",
+    "postupdate": "bower update",
+    "test": "make test"
   },
   "main": "app.js",
   "repository": {
@@ -60,5 +63,9 @@
     "url": "git://github.com/leosuncin/sails-angular-boilerplate.git"
   },
   "author": "Jaime Leonardo Suncin Cruz <leosuncin@gmail.com>",
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "devDependencies": {
+    "barrels": "^1.5.0",
+    "sails-test-helper": "^0.4.4"
+  }
 }
