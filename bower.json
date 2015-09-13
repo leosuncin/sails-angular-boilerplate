@@ -41,6 +41,10 @@
     "angular-sanitize": "~1.4.5",
     "angular-touch": "~1.4.5",
     "angular-ui-router": "~0.2.15",
+    "angularSails": "~0.12.1",
     "bootstrap": "~3.3.5"
+  },
+  "resolutions": {
+    "angular": "~1.4.5"
   }
 }

@@ -14,6 +14,7 @@ angular
         'ngResource',
         'ngSanitize',
         'ngTouch',
+        'sails.io',
         'ui.router',
         'sailsAngularBoilerplateApp.config',
         'sailsAngularBoilerplateApp.templates'
