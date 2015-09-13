@@ -22,7 +22,20 @@ angular
         '$stateProvider',
         '$urlRouterProvider',
         '$locationProvider',
-        function($stateProvider, $urlRouterProvider, $locationProvider) {
+        'ENV',
+        '$compileProvider',
+        '$logProvider',
+        function(
+            $stateProvider,
+            $urlRouterProvider,
+            $locationProvider,
+            ENV,
+            $compileProvider,
+            $logProvider) {
+            // Optimize in production enviroment
+            $compileProvider.debugInfoEnabled(ENV.enviroment !== 'production');
+            $logProvider.debugEnabled(ENV.enviroment !== 'production');
+
             // For any unmatched url, redirect to /
             $urlRouterProvider.otherwise('/');
 
