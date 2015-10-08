@@ -1,3 +1,3 @@
 # sails-angular-boilerplate
 
-a [Sails](http://sailsjs.org) application
+Fork this repository in order to make a new [Sails](http://sailsjs.org) application
